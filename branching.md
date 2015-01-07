@@ -1,4 +1,5 @@
 = Branching and Tagging
+
 == How do you make a branch?
 A branch is a "movable pointer to a commit".
 
@@ -25,7 +26,7 @@ git checkout --track <remote>/<branch>
 git tag <tagname>
 ```
 
-== How do you push a tag to a remote?
+== How do you push a tag to a remote?!
 To push all tags:
 ```
 git push --tags
