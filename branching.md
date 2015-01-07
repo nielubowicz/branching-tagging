@@ -1,6 +1,6 @@
 = Branching and Tagging
 == How do you make a branch?
-A branch is a "movable pointer to a commit"
+A branch is a "movable pointer to a commit".
 
 ```
 git branch <branchname>
@@ -22,14 +22,27 @@ git checkout --track <remote>/<branch>
 
 == How do you make a tag?
 ```
-git tag 
+git tag <tagname>
 ```
+
 == How do you push a tag to a remote?
+To push all tags:
 ```
-git push --tags <remote> <branch>
+git push --tags
+```
+
+To push a single tag:
+```
+git push origin <tagname>
 ```
 
 == What is the difference between a branch and a tag?
+Tag: a pointer to a commit in a branch (stationary)
+Branch: a history of commits for a particular line of development
+
+Lightweight tags - a lightweight pointer to a particular commit
+Annotated tags - stored as a full object, with user name, email, message among other info
+
 == How does one view all branches? Tags? Across all remotes?
 View all branches:
 ```
@@ -37,9 +50,19 @@ git branch
 ```
 
 View all tags:
+List or delete (if used with -d) the remote-tracking branches.
+```
+git branch -r
+git branch --remotes
 ```
 
+List both remote-tracking branches and local branches.
 ```
-
+git branch -a
+git branch --all
+```
 
 == How do I delete a remote branch? *
+```
+git branch -rd <remote>/<branch>
+```
