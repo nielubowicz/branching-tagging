@@ -539,15 +539,43 @@ git branch --all</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>git branch -rd &lt;remote&gt;/&lt;branch&gt;</code></pre>
+<pre class="highlight"><code>git push origin --delete &lt;branch&gt;</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>or</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git push origin :&lt;branch&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+You can delete a local reference to a remote branch using
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>git branch -rd origin/&lt;branch&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>but the branch will still remain remotely.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-01-07 15:26:34 EST
+Last updated 2015-01-08 10:53:06 EST
 </div>
 </div>
 </body>
