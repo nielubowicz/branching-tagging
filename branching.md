@@ -25,6 +25,10 @@ git checkout --track <remote>/<branch>
 ```
 git tag <tagname>
 ```
+or
+```
+git tag -a WorkingTag -m"Remember that time we had a working product?"
+```
 
 == How do you push a tag to a remote?!
 To push all tags:
@@ -41,8 +45,8 @@ git push origin <tagname>
 Tag: a pointer to a commit in a branch (stationary)
 Branch: a history of commits for a particular line of development
 
-Lightweight tags - a lightweight pointer to a particular commit
-Annotated tags - stored as a full object, with user name, email, message among other info
+* Lightweight tags - a lightweight pointer to a particular commit
+* Annotated tags - stored as a full object, with user name, email, message among other info
 
 == How does one view all branches? Tags? Across all remotes?
 View all branches:
