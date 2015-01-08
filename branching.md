@@ -53,8 +53,7 @@ git branch
 View all tags:
 List or delete (if used with -d) the remote-tracking branches.
 ```
-git branch -r
-git branch --remotes
+git tag
 ```
 
 List both remote-tracking branches and local branches.
