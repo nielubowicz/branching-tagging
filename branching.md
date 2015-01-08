@@ -65,5 +65,15 @@ git branch --all
 
 == How do I delete a remote branch? *
 ```
-git branch -rd <remote>/<branch>
+git push origin --delete <branch>
 ```
+or
+```
+git push origin :<branch>
+```
+[TIP]
+You can delete a local reference to a remote branch using 
+```
+git branch -rd origin/<branch>
+```
+but the branch will still remain remotely.
